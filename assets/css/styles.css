@@ -86,6 +86,7 @@ html{
     background-color:#ffff;
     min-width: 160px;
     box-shadow: 0 0 5px rgba(0, 0,0, 0.5);
+    z-index: 100;
 
 }
 .meunu .meunu2 li a{
@@ -94,6 +95,7 @@ html{
     display: inline-block;
     line-height: 30px;
     padding: 2px 18px;
+    
 }
 /* cho chieu dai = full*/
 .meunu .meunu2 li{
