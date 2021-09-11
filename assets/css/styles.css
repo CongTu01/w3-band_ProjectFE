@@ -1,0 +1,466 @@
+/*reset CSS*/
+*{
+    /*emmet*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.colum{
+    float: left;
+    padding: 8px;
+}
+.col-thir{
+    width: 33.3333%;
+}
+.col-har{
+    width: 50%;
+}
+.col-full
+{
+    width: 100%;
+}
+/*
+1. từ ngoài vào trong
+2. từ trên xuóng dưới 
+3. tổng quan đến chi tiết 
+
+*/
+/*
+1. vị trí
+2. kíchh thước(width,height)
+3.màu sắc
+4.kiểu dáng(,kiểu chữ , tròn, trơn ...)
+*/
+html{
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.meunu{
+    display: inline-block;
+}
+#main{
+    position: relative;
+
+}
+.meunu li{
+    display: inline-block;
+    position: relative;
+
+}
+.meunu > li >  a{
+    padding: 0px 20px;
+
+}
+.meunu  li   a{
+    text-decoration: none;
+    color: white;
+    line-height: 46px;
+    display: inline-block;
+    
+}
+.meunu > li:hover >  a{
+    background-color: cyan ;
+    color: black;
+}
+.meunu .meunu2 li:hover   
+{
+    background-color: cyan ;
+    color: black;
+}
+/* hien du lieu*/
+.meunu > li:hover .meunu2{
+    display: block;
+    z-index: 1;
+}
+
+.meunu .meunu2{
+    display: none;
+    position: absolute;
+    top :100%;
+    left: 0;
+    list-style-type: none;
+    background-color:#ffff;
+    min-width: 160px;
+    box-shadow: 0 0 5px rgba(0, 0,0, 0.5);
+
+}
+.meunu .meunu2 li a{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 30px;
+    padding: 2px 18px;
+}
+/* cho chieu dai = full*/
+.meunu .meunu2 li{
+    width: 100%;
+}
+.ti-angle-down{
+    font-size: 12px
+}
+.header .search-btn{
+    float: right;
+    
+}
+.header .search-btn:hover
+{
+    background: turquoise;
+    cursor: pointer;
+}
+.header .ti-search{
+    color: white;
+  
+    line-height: 46.5px;
+    padding: 0px 20px;
+}
+.header{
+   position:fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    background-color: black;
+    height: 46px;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+
+}
+
+.slider{
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url("/w3_band/assets/img/ny.jpg") top center / cover no-repeat;
+
+}
+.slider .text{
+    bottom: 0;
+    color: white;
+    bottom: 47px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+}
+.slider h2{
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.slider p{
+    font-size: 15px;
+}
+.content{
+
+
+}
+.contain1,.contain2,.contain3{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    
+}
+.contain1 .tex1, .contain3 .tex1{
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Segoe UI",Arial,sans-serif;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contain1 .tex2,.contain3 .tex2{
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-style: italic;
+    opacity: 0.6;
+}
+.contain1 .tex3{
+    text-align: justify;
+    line-height: 1.4;  
+}
+.div_{
+    float: left;
+    margin-top: 48px;
+    width: 33.333%;
+    text-align: center;
+  
+}
+.content4{
+    background-color:black ;
+    
+}
+.contain2 .tex1{
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Segoe UI",Arial,sans-serif;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-bottom: 20px;
+    color:white;
+    padding-top: 50px;
+}
+.contain2 .tex2{
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-style: italic;
+    opacity: 0.6;
+    color:white;
+}
+.div_ .image{
+    width: 154px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    
+}
+.div_ .name{
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+.date{
+    margin-top: 40px;
+    background-color: white;
+    margin-bottom: 40px;
+    list-style-type: none;
+    
+}
+.date li{
+    color: #757575;
+padding: 8px 16px;
+border-bottom:  1px solid;
+}
+.date .Sold_out{
+    background-color: red;
+    color: white;
+    margin-left: 10px;
+}
+.date .cout{
+    width: 24px;
+    height: 24px;
+    background-color: black;
+    color: white;
+    float: right;
+    text-align: center;
+    margin-right: 10px;
+    line-height: 22px;
+    border-radius: 50%;
+    margin-top: -2px;
+    
+}
+.clear{
+    clear: both;
+}
+.khung{
+  
+    margin-bottom: 1px;
+    margin-top: 1px;
+    padding-bottom: 40px;
+}
+.anh1{
+    width: 100%;
+    display: block;
+}
+.anh1:hover{
+    opacity: 0.6;
+}
+ .noidung {
+    background: white;
+    padding: 14px;
+}
+ .noidung .ngay{
+    font-size: 15px;
+    color:#757575;
+    margin: 15px 0px 15px 0px;
+}
+ .noidung .mieuta{
+    color: black;
+    font-size: 15px;
+    margin: 15px 0px 15px 0px;
+    
+}
+ .noidung h2{
+    color: black;
+    font-size: 15px;
+    margin: 10px 0px 15px 0px;
+}
+.noidung .buy{
+    display: inline-block;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 8px 16px;
+    margin: 0px 0px 16px;
+    
+}
+.noidung .buy:hover{
+    background-color: gray;
+    color: black;
+}
+.demo{
+    position:fixed;
+    background: rgba(0, 0,0, 0.5);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.demo.open
+{
+    display: flex;
+}
+.maindemo
+{
+    position: relative;
+    background-color: white;
+    height: 450px;
+    width: 900px;
+    max-width:calc(100% - 32px);
+    animation: demoFaceIn ease .5s;
+}
+.maindemo .close{
+    position: absolute;
+    color: white;
+    right: 0;
+   padding: 12px;
+}
+.maindemo .headdemo{
+    background-color: #009688;
+    text-align: center;
+    color: white;
+    padding: 34px;
+    height: 128px;
+    font-size: 25px;
+    line-height: 62px;
+    letter-spacing: 4px;
+    
+}
+.bodydemo {
+   margin:10px 0px;
+
+}
+.thongtin{
+    padding: 15px;
+    margin-top: 10px;
+}
+.nhap{
+    display: block;
+    border: 1px solid #ccc;
+    padding: 11px;
+    margin: 10px 12px;
+    width: 96%;
+   
+}
+.close:hover{
+    background-color: red;
+    color: black;
+}
+.pay{
+    font-size: 18px;
+    width: 96%;
+
+    height: 30px;
+    margin: 14px 12px;
+    padding: 12px 0px 29px 0px;
+    background-color: lawngreen;
+    text-transform: uppercase;
+}
+.pay:hover{
+    background-color: mediumaquamarine;
+    color: black;
+}
+.last{
+    float: right;
+    padding: 0px 25px;
+}
+@keyframes demoFaceIn {
+    from{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    
+}
+.contain3{
+    margin-bottom: 50px;
+}
+.col-contact
+{
+    font-size: 18px;
+    line-height: 1.5;
+}
+.row-contact
+{
+    margin-top: 70px;
+}
+.colum i{
+    
+    display: inline-block;
+    width: 30px;
+}
+.colum input{
+    font-size: 15px;
+}
+.form-control
+{
+    padding: 8px;
+    width: 100%;
+
+}
+.col-full .form-control1
+{
+padding: 8px;
+width: 100%;
+}
+.test-form{
+    margin-top: -12px;
+}
+.btn-send
+{
+    padding: 8px 16px;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    border: 1px solid;
+    float: right;
+    margin-top: 4px;
+}
+.btn-send:hover
+{
+    background-color: gray;
+    color: white;
+}
+.img-map{
+    margin-top: 50px;
+    width: 100%;
+    
+}
+.footer
+{
+    font-size: 15px;
+    color: gray;
+    padding: 64px;
+    text-align: center;
+}
+.footer .item{
+    margin: 20px;
+    font-size: 25px;
+ 
+}
+.w3hack{
+   
+    color: gray;
+}
